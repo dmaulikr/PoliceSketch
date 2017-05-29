@@ -18,7 +18,6 @@
 
 @end
 
-
 @implementation LPSViewController
 
 - (void)viewDidLoad {
@@ -53,6 +52,5 @@
 - (IBAction)rightButtonMouth:(UIButton *)sender {
     self.mouthImageView.image = [self.data nextMouth:self.mouthImageView.image];
 }
-
 
 @end
