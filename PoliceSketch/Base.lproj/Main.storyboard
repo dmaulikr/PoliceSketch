@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LPSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-qz-cSS">
+                                <rect key="frame" x="16" y="30" width="288" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXb-1x-fkn">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="100"/>
+                                        <state key="normal" image="arrow_left.jpg">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leftButtonEyes:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qvh-OC-aR7"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NY4-Kv-j1f">
+                                        <rect key="frame" x="34" y="0.0" width="220" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="O6t-EW-j8V"/>
+                                            <constraint firstAttribute="height" constant="100" id="Yb9-Q2-nVZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
+                                        <rect key="frame" x="254" y="0.0" width="34" height="100"/>
+                                        <state key="normal" image="arrow_right.jpg">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rightButtonEyes:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EPu-yw-Veg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NY4-Kv-j1f" firstAttribute="centerX" secondItem="pBd-qz-cSS" secondAttribute="centerX" id="Uuw-Iy-lgw"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0m-Fb-y2f">
+                                <rect key="frame" x="16" y="130" width="288" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-H7-kYw">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="100"/>
+                                        <state key="normal" image="arrow_left.jpg"/>
+                                        <connections>
+                                            <action selector="leftButtonNose:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wxp-t5-QQa"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="E3m-e1-BYc">
+                                        <rect key="frame" x="34" y="0.0" width="220" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="Vf4-aH-amb"/>
+                                            <constraint firstAttribute="height" constant="100" id="fad-me-9XK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dG-9Z-BK2">
+                                        <rect key="frame" x="254" y="0.0" width="34" height="100"/>
+                                        <state key="normal" image="arrow_right.jpg"/>
+                                        <connections>
+                                            <action selector="rightButtonNose:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CP3-Jb-Dge"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="E3m-e1-BYc" firstAttribute="centerX" secondItem="l0m-Fb-y2f" secondAttribute="centerX" id="BRz-qu-soG"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOW-b4-MCt">
+                                <rect key="frame" x="16" y="230" width="288" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-pw-2bu">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="100"/>
+                                        <state key="normal" image="arrow_left.jpg"/>
+                                        <connections>
+                                            <action selector="leftButtonMouth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jW5-WO-iWU"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mouth_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CDZ-zW-tqe">
+                                        <rect key="frame" x="34" y="0.0" width="220" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="0b0-dE-67R"/>
+                                            <constraint firstAttribute="width" constant="220" id="6EZ-WG-wlb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ml-QD-nVA">
+                                        <rect key="frame" x="254" y="0.0" width="34" height="100"/>
+                                        <state key="normal" image="arrow_right.jpg"/>
+                                        <connections>
+                                            <action selector="rightButtonMouth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RrQ-TS-lhw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CDZ-zW-tqe" firstAttribute="centerX" secondItem="VOW-b4-MCt" secondAttribute="centerX" id="7D4-b8-REk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VOW-b4-MCt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="2Qe-o9-0AU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VOW-b4-MCt" secondAttribute="trailing" id="5dp-Qv-DD5"/>
+                            <constraint firstItem="VOW-b4-MCt" firstAttribute="top" secondItem="l0m-Fb-y2f" secondAttribute="bottom" id="5hJ-2i-tyY"/>
+                            <constraint firstItem="l0m-Fb-y2f" firstAttribute="top" secondItem="pBd-qz-cSS" secondAttribute="bottom" id="DXf-L6-scM"/>
+                            <constraint firstItem="l0m-Fb-y2f" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="FEM-Mb-DZN"/>
+                            <constraint firstItem="pBd-qz-cSS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="I5n-1S-eTK"/>
+                            <constraint firstItem="pBd-qz-cSS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="MMz-Lw-SIc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l0m-Fb-y2f" secondAttribute="trailing" id="fRg-AB-Fjj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pBd-qz-cSS" secondAttribute="trailing" id="il9-sn-ehA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eyesImageView" destination="NY4-Kv-j1f" id="TcF-KT-Sqd"/>
+                        <outlet property="mouthImageView" destination="CDZ-zW-tqe" id="bwk-1h-X2V"/>
+                        <outlet property="noseImageView" destination="E3m-e1-BYc" id="5aR-uw-rxp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_left.jpg" width="50" height="100"/>
+        <image name="arrow_right.jpg" width="50" height="100"/>
+        <image name="eyes_2.jpg" width="220" height="100"/>
+        <image name="mouth_2.jpg" width="220" height="100"/>
+        <image name="nose_2.jpg" width="220" height="100"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
